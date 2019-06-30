@@ -6,6 +6,7 @@
     "@babel/runtime": "7.0.0-beta.55",
     "@material-ui/core": "^1.2.0",
     "@material-ui/icons": "^1.1.0",
+    "firebase": "^6.2.4",
     "react": "^16.7.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0",
     "react-reveal": "^1.2.2",
@@ -34,5 +35,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abygail27/arkano-dashboard-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abygail27/arkano-dashboard-/issues"
+  },
+  "homepage": "https://github.com/Abygail27/arkano-dashboard-#readme",
+  "devDependencies": {}
 }

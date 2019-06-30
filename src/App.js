@@ -1,20 +1,48 @@
-import  React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
- 
+import React, { Component } from 'react';  
 import Dashboard from './components/dashboard/Dashboard';
-import SignIn from './components/auth/SignIn';
+import SignIn from './SignIn'
+import fire from './fire';
 
-const App = () => (
-    <Router>
-      <div>
-     
-  
-      <Route path = '/dashboard' component = {Dashboard}></Route>
-      <Route path = '/signin' component = {SignIn}></Route>
-      </div>
+
+class App extends Component {
+ constructor(props){
+   super(props);
+     this.state = {
+       user: {},
       
-    </Router>
-       )
+   }
+ }
+
+ componentDidMount(){
+   this.authListener();
+ }
+  authListener() {
+
+    fire.auth().onAuthStateChanged((user) => {
+      //console.log(user);
+       if (user) {
+         this.setState ({ user }); 
+       //  localStorage.setItem('user', user.uid);
+       } else {
+         this.setState({user: null });
+        //  localStorage.removeItem('user');
+ 
+       }
   
+   });
+
+}
+
+render () {
+  return (
+    <div className = "App">
+  {this.state.user ? (<Dashboard />) : (<SignIn/>)}
+    </div>
+       );
+  
+  }
+
+}
 
 export default App; 
+
