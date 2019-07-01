@@ -21,6 +21,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
     backgroundColor: '#222d32'
+    
   },
   drawer: {
     [theme.breakpoints.up('sm')]: {
@@ -99,9 +100,11 @@ export default function ResponsiveDrawer (props) {
         </Toolbar>
       </AppBar>
       <nav className={classes.drawer} aria-label='Mailbox folders'>
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden smUp implementation='css'>
           <Drawer
+          style = {{
+            backgroundColor: '#1e2a2e'
+          }}
             container={container}
             variant='temporary'
             anchor={theme.direction === 'rtl' ? 'right' : 'left'}

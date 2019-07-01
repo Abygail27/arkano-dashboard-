@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { CardContent, Card,Typography, CardActions } from '@material-ui/core'
+import {  CardActions } from '@material-ui/core'
 import Button from '@material-ui/core/Button'
 
 import firebase from '../../firebase'

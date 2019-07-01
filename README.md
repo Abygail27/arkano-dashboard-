@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Arkano Dashboard 
 
-## Available Scripts
+Un dashboard te permite identificar el rendimiento comercial de un equipo y su redimiento en tiempo real. 
+Usando el dashboard de Arkano la visualización en un solo lugar del los datos ingresados de las ventas, 
+numero de usuarios nuevos permite que sea más facíl medir las estadisticas. 
 
-In the project directory, you can run:
+A través de un tablero de visualización de datos puedes medir el desempeño de venta de un equipo en relacipon a los objetivos y metas coemrciales. 
 
-### `npm start`
+## ¿cuál es la razon de crear un dashboard para un equipo de ventas? 
+1. Puedes ratrear el redimiento individual de tu equipo.
+2. Para realizar un seguimiento de ventas 
+3. Crea un entorno de trasparencia de datos. 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Herramientas para crear el Dashboard Arkano 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+para la el reporte y ratreo de estadisticas de ventas se utilizo firebase como almacenamiento de datos en tiempo real. 
+El interfaz necesita ser dinamico y que se recargue y actualize en una sola pagina. 
+Se desarrollo con "React" framework de javascript creado por facebook que permite crear UIs creativas y un diseño simple para cada componente y el estado de la aplicación.
 
-### `npm test`
+El manejo de datos también incluyo la utilización de "store" de redux, que permite hacer un uso más dinamico y efectivo de los datos que se estan manipulando. 
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para el diseño de la interfaz fue necesario utilizar "Material-ui" y "Bootstrap" esto permitio que los componentes visualizados más rapido y con el mejor diseño y construicción.
 
-### `npm run build`
+## Desarrollo de Dashboard 
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Los dashboard son muy apreciados porque siguen la tendencia genral de expresar con imagenes antes que con palabras. en este caso, era necesario la utilizacón de colores que resaltaran y el usuario pudiera recordar y conectar con cada dato. 
+Para empezar a desarrollar, se tomaron cuatro puntos clave para comenzar con las historia de usuario.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+em primero momento se tomo en cuento el contexto, siendo un dashboard para manejo de datos relacionados con ventas los datos numericos jugarian un papel importante y era necesario su manipulación a través de propiedades que nos permitieran manejarlos en tiempo real. 
+en segundo el diseño de la interfaz, que fue previamente predispuesta. teniendo un diseño común de un dashboard agregando dos componentes fundamentales para la manipulacipon de los datos ingresados en el form. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+En tercer lugar la validación de los datos a través de su despligue a firestore, y la integracion de los mismo en las tarjetas y la automatización en la base de datos. 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
