@@ -8,7 +8,6 @@
   color: white;
 }
 
-
 .MuiAppBar-colorPrimary {
   color: #fff;
   background-color: #367fa9
@@ -44,14 +43,14 @@
   color:white !important;
 }
 #form_dashboard{
-  width: 67%;
-  height: 68vh;
+  width: 50%;
   margin-top: 10%;
-  margin-left: 28%;
+  margin-left: 20%;
   display: flex;
   padding: 2%;
   background-color: white;
   flex-direction: column;
+  color: white;
 }
 .nav-link{
   height: 6vh;

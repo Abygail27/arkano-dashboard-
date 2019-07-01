@@ -48,7 +48,8 @@ class Dashboard extends Component {
 
             <
         form id='form_dashboard' >
-                <
+                <   
+            
                     TextField id='outlined-full-width'
                     label='Campo obligatoro*'
                     type='text'
@@ -192,11 +193,14 @@ class Dashboard extends Component {
                             shrink: true,
                         }
                     }
-                /> <Button onClick={
+                /> <Button size='small' className= "send" onClick={
                         this.onSubmit
                     }
-                    variant='contained'
-                    color='primary' >
+                   style = {{
+                       backgroundColor: '#3c8dbc',
+                       
+                      
+                   }} >
                     Enviar </Button> </form>
                   )
                 }

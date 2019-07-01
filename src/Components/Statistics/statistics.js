@@ -1,11 +1,33 @@
 import React, { Component } from 'react'
 import { CardContent, Card,Typography, CardActions } from '@material-ui/core'
 import Button from '@material-ui/core/Button'
+
 import firebase from '../../firebase'
+const firestore = firebase.firestore()
 
-class Statistics extends Component {
-
+class Statistics extends Component  {
+    constructor (props) {
+      super(props)
+      this.state = ({
+        dataSales: []
+      })
+    }
+  
+    componentWillMount () {
+      firestore.collection('sales').onSnapshot((querySnapshot) =>{
+        const dataSales = []
+        querySnapshot.forEach((doc) => {
+          const { userNames, amount, purchase, users, viewers, date } = doc.data()
+          let dataComplete = { userNames, amount, purchase, users, viewers, date  }
+          dataSales.push(dataComplete)
+        })
+        this.setState({ dataSales })
+  
+      })
+    }
   render () {
+    const {dataSales} = this.state
+
     return (
       <div className='card_container'>
      
@@ -14,7 +36,7 @@ class Statistics extends Component {
       
 
          <div >
-      <div className="new-purchase" >
+      <div className="card_purchase" >
   <div className="column">
     <div className="card" 
     style = {{
@@ -35,7 +57,7 @@ class Statistics extends Component {
 
 
     <div >
-      <div className="new-purchase" >
+      <div className="card_amount" >
   <div className="column">
     <div className="card" 
     style = {{
@@ -55,7 +77,7 @@ class Statistics extends Component {
     </div>
 
     <div >
-      <div className="new-user" >
+      <div className="card_users" >
   <div className="column">
     <div className="card" 
     style = {{
@@ -74,7 +96,7 @@ class Statistics extends Component {
     </div>
 
     <div >
-      <div className="new-viewer" >
+      <div className="ncard_viewers" >
   <div className="column">
     <div className="card" 
     style = {{
