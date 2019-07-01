@@ -63,8 +63,14 @@ export default function ResponsiveDrawer (props) {
   const drawer = (
     <div>
 
-      <div className={classes.toolbar}/> 
-      <Divider/>
+      <div className={classes.toolbar} 
+      style = {{
+        backgroundColor:'#3c8dbc',
+        color: 'white'
+       }}
+      />  
+      
+      <Divider/> 
       <div className='user_content'> 
         <p>Usuario Apellido</p>
         <Avatar className=''>NN</Avatar>

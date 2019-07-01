@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import React from 'react'
 import Drawer from './Components/Drawer'
-import Dashboard from './Components/Dashboard/RenderDashboard'
-import Statistics from './Components/Statistics/RenderStatistics'
+import Dashboard from './Components/Dashboard/main'
+import Statistics from './Components/Statistics/statistics'
 import Ui from './Ui'
 
 class App extends React.Component {
