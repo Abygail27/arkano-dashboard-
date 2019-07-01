@@ -1,0 +1,127 @@
+@media screen and (max-width: 600px) {
+    
+.user_content{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 16vh;
+  color: white;
+}
+.MuiAppBar-colorPrimary {
+  color: #fff;
+  background-color: #367fa9
+}
+
+#form_dashboard{
+  width: 50%;
+  height: 65vh;
+  margin-top: 8%;
+  
+  margin-left: 28%;
+  display: flex;
+  padding: 2%;
+  background-color: white;
+  flex-direction: column;
+}
+.nav-link{
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration:none;
+  align-items: center;
+}
+.makeStyles-drawerPaper-6{
+  width: 240px;
+  background-color: #323232 !important;
+}
+.makeStyles-toolbar-5 {
+  min-height: 64px;
+  background-color: #367fa9;
+  text-align: center;
+  color: white;
+}
+
+
+.column {
+  float: left;
+  width: 35%;
+  padding: 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+    .statistics-container {
+      width: 100%;
+      margin-top: 20%;
+    }
+  }
+
+  .user_content{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 16vh;
+    color: white;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #367fa9
+  }
+  
+  #form_dashboard{
+    width: 50%;
+    height: 65vh;
+    margin-top: 30%;
+    
+    margin-left: 28%;
+    display: flex;
+    padding: 2%;
+    background-color: white;
+    flex-direction: column;
+  }
+  .nav-link{
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration:none;
+    align-items: center;
+  }
+  .makeStyles-drawerPaper-6{
+    width: 240px;
+    background-color: #323232 !important;
+  }
+  .makeStyles-toolbar-5 {
+    min-height: 64px;
+    background-color: #367fa9;
+    text-align: center;
+    color: white;
+  }
+ 

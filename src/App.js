@@ -1,48 +1,25 @@
-import React, { Component } from 'react';  
-import Dashboard from './components/dashboard/Dashboard';
-import SignIn from './SignIn'
-import fire from './fire';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import React from 'react'
+import Drawer from './Components/Drawer'
+import Dashboard from './Components/Dashboard/RenderDashboard'
+import Statistics from './Components/Statistics/RenderStatistics'
+import Ui from './Ui'
 
-
-class App extends Component {
- constructor(props){
-   super(props);
-     this.state = {
-       user: {},
-      
-   }
- }
-
- componentDidMount(){
-   this.authListener();
- }
-  authListener() {
-
-    fire.auth().onAuthStateChanged((user) => {
-      //console.log(user);
-       if (user) {
-         this.setState ({ user }); 
-       //  localStorage.setItem('user', user.uid);
-       } else {
-         this.setState({user: null });
-        //  localStorage.removeItem('user');
- 
-       }
-  
-   });
-
-}
-
-render () {
-  return (
-    <div className = "App">
-  {this.state.user ? (<Dashboard />) : (<SignIn/>)}
-    </div>
-       );
-  
+class App extends React.Component {
+  render () {
+    return (
+      <Router>
+        <Ui>
+          <Drawer/>
+          <Switch className='container'>
+            <Route exact path='/' component={Dashboard} />
+            <Route exact path='/Stats' component={Statistics} />
+          </Switch>
+        </Ui>
+      </Router>
+    )
   }
-
 }
 
-export default App; 
+export default App;
 
